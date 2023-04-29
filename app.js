@@ -22,6 +22,7 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 
 //or body parser
+app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
 //Express session
